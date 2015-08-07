@@ -14,8 +14,6 @@ var config = require(configPath);
 var bucketName = custom_bucket || config.bucketName;
 config.bucketName = bucketName
 
-console.log("Publishing to ", bucketName);
-
 runner.setConfig(config);
 
 runner.run();
